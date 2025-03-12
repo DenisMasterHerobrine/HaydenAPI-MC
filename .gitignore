@@ -1,0 +1,9 @@
+fabric/build/
+fabric/.gradle/
+common/build/
+common/.gradle/
+.gradle/
+.idea/
+neoforge/.gradle/
+neoforge/build/
+fabric/build/loom-cache/
