@@ -35,10 +35,10 @@ dependencies {
     modImplementation "com.fasterxml.jackson.dataformat:jackson-dataformat-toml:$rootProject.jackson_version"
     modImplementation "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:$rootProject.jackson_version"
 
-    shadowBundle "com.fasterxml.jackson.core:jackson-core:$rootProject.jackson_version"
-    shadowBundle "com.fasterxml.jackson.core:jackson-databind:$rootProject.jackson_version"
-    shadowBundle "com.fasterxml.jackson.dataformat:jackson-dataformat-toml:$rootProject.jackson_version"
-    shadowBundle "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:$rootProject.jackson_version"
+    include "com.fasterxml.jackson.core:jackson-core:$rootProject.jackson_version"
+    include "com.fasterxml.jackson.core:jackson-databind:$rootProject.jackson_version"
+    include "com.fasterxml.jackson.dataformat:jackson-dataformat-toml:$rootProject.jackson_version"
+    include "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:$rootProject.jackson_version"
 
     common(project(path: ':common', configuration: 'namedElements')) { transitive false }
     shadowBundle project(path: ':common', configuration: 'transformProductionFabric')
