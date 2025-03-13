@@ -7,3 +7,4 @@ common/.gradle/
 neoforge/.gradle/
 neoforge/build/
 fabric/build/loom-cache/
+/.env

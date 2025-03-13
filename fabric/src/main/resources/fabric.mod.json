@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "haydenapi",
+  "version": "${version}",
+  "name": "HaydenAPI",
+  "description": "HaydenAPI is a simple-yet-powerful API library for my own needs when doing Minecraft modding..",
+  "authors": [
+    "DenisMasterHerobrine"
+  ],
+  "contact": {
+    "homepage": "https://github.com/DenisMasterHerobrine/HaydenAPI-MC/",
+    "sources": "https://github.com/DenisMasterHerobrine/HaydenAPI-MC"
+  },
+  "license": "GPLv3",
+  "icon": "assets/haydenapi/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.denismasterherobrine.haydenapi.fabric.HaydenAPIFabric"
+    ],
+    "client": [
+      "dev.denismasterherobrine.haydenapi.fabric.client.HaydenAPIFabricClient"
+    ]
+  },
+  "mixins": [
+    "haydenapi.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "minecraft": ">=1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
